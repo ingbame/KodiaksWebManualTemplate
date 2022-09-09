@@ -1,0 +1,42 @@
+.content {
+  background-color: #1E1E2E;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.matToolbar {
+  height: 60px;
+  ;
+}
+
+.sideNav {
+  border: none;
+  background-color: transparent;
+}
+
+.sideNavContainer {
+  width: 100%;
+}
+
+.sideNavContainer .main-page {
+  margin-left: 20px;
+}
+
+.sideNavSide1 {
+  border-radius: 15px 15px 0 0;
+  width: 230px;
+}
+
+.sideNavSide2 {
+  width: 130px;
+}
+
+.sideNavSide1,
+.sideNavSide2 {
+  margin: 60px 0 0 0;
+  height: 100%;
+  max-height: Calc(100vh - 60px);
+}

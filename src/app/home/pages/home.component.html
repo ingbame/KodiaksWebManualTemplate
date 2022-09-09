@@ -1,0 +1,23 @@
+<div class="content" role="main">
+  <mat-toolbar class="matToolbar">
+    <app-navbar [sidenav]="sidenav1"></app-navbar>
+  </mat-toolbar>
+  <mat-sidenav-container class="sideNav sideNavContainer">
+    <mat-sidenav #sidenav1 mode="side" opened class="sideNav sideNavSide1" [fixedInViewport]="sideNav1Fixed"
+      [fixedTopGap]="0" [fixedBottomGap]="0">
+      <app-sidebar></app-sidebar>
+    </mat-sidenav>
+
+    <mat-sidenav #sidenav2 mode="side" opened class="sideNav sideNavSide2" position="end"
+      [fixedInViewport]="sideNav1Fixed" [fixedTopGap]="0" [fixedBottomGap]="0">
+      <app-tools [sidenav2]="sidenav2"></app-tools>
+    </mat-sidenav>
+
+    <mat-sidenav-content class="sideNav">
+      <div class="main-page">
+        <router-outlet></router-outlet>
+      </div>
+      <app-footer></app-footer>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
